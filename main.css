@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Anton', sans-serif;
+    overflow-x: hidden;
+    background-image: url("images/EmmanuelOne 3.JPG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+div, section,span,ul,li,a,header{
+    /* what is border-box */
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+/* css reset */
+
+header {
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    /* top right bottom left */
+    padding: 20px 50px;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+    font-size: 1.5rem;
+}
+
+#headerTag:hover {
+   filter: blur(5px);
+}
+
+#logo{
+    width:50px;
+}
+#menu li {
+list-style: none;
+display: inline-block;
+margin: 20px;
+}
+
+#menu li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+/* Refers to each 'section' tag */
+section{
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    position: relative;
+}
+
+
+#about{
+    background-color: white;
+    color: black;
+   
+}
+#footer{
+    background-color: white;
+    color: pink;
+    height: 20vh;
+
+}
+
+
+.image-box{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    left: 10%;
+    width: 100vw;
+    flex-direction:row;
+}
+
+#image1{
+    position: relative;
+    width:35%;
+    transition: all 0.3s;
+    transform: scale(1);
+    z-index: 1;
+    left: 5%;
+    border-radius: 5px;
+    margin: 0 auto;
+    bottom: 50px;
+}
+#image2{
+    width: 40%;
+    position: relative;
+    top: 100px;
+    border-radius: 15px;
+    margin: 0 auto;
+    left: 80px;
+    z-index: 1;
+}
+#aboutTitle{
+    position: relative;
+    font-size: 5rem;
+    font-weight: 700;
+    left:5%;
+    top: 25px;
+    
+}
+
+
+
+#image2:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease;
+}
+
+#home h1{
+    color: #fff;
+    font-size: 4rem;
+}
+
+#socials{
+    background-color:black ;
+    color: white;
+}
+
+.socials-image-box ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+  
+}
+
+.socials-image-box img {
+    position: relative;
+    width:80%;
+    border-radius: 5px;
+    margin: 0 auto;
+    left: 10%;
+
+}
+.socials-image-box{
+   position: relative;
+   top: 15%;
+}
+
+.socials-image-box img:hover{
+    filter: blur(20px);
+    transition: transform .5s ease;
+}
+
+#socialsTitle {
+    position: relative;
+    font-size: 5rem;
+    font-weight: 700;
+    left:5%;
+    top: 25px;
+}
+
+
+#blog{
+    background-color:white ;
+    height: fit-content;
+}
+
+.video {
+    position: relative;
+    margin: 0 auto;
+    top: 5%;
+    left: 5%;
+}
+#image6 {
+    width: 50%;
+    border-radius: 15px;
+    position: relative;
+    top:100px;
+
+}
+#image7 {
+    width: 55%;
+    border-radius: 15px;
+    position: relative;
+    left: 35%;
+    bottom:20px;
+
+}
+#image7:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease;
+}
+
+#blogh1{
+    position: relative;
+    font-size: 4.5rem;
+    font-weight: 700;
+    left:5%;
+    top: 25px;
+}
+
+#saints {
+    width: 100px;
+}
+#rose{
+    width: 130px;
+}
+#instagram {
+    width: 110px;
+}
+#twitter{
+    width: 110px;
+}
+
+.footerImages li {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 50px;
+}
+.footerImages{
+    position: relative;
+   justify-content: space-around;
+}
+
+
+
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black
+}
+
+
+
+
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    #image7 {
+        width: 55%;
+        border-radius: 15px;
+        position: relative;
+        left: 35%;
+        bottom:80px;
+    
+    }
+
+}}
