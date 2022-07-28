@@ -13,3 +13,7 @@ Here I reacted the formation for the different section of the web page using an 
 To itterate through the page you can click on the nav links in the menu(mobile) / top of the screen (desktop), although I currently have a bug where when i click on the hamburger icon to remove the nav bar from screen, it takes the user back to the top of the website which is undesireable.
 
 *Bug still present
+
+
+LIVE WEBSITE:
+https://evannikaloasthefirst.github.io/EmmanuelsPortfolio/
