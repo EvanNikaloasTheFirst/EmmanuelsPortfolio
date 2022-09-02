@@ -7,7 +7,9 @@
 html{
     font-family: 'Anton', sans-serif;
     font-size: 100%;
+    scroll-behavior:smooth;
 }
+
 
 body{
     /* background-color: black; */
@@ -32,16 +34,15 @@ body{
 header{
     
         grid-area: header;
-        
-            background-color: white;
+        visibility: hidden;
             margin-left: -8px;
             
-            display: block;
+            display: inline-block;
             top: 0;
             position:fixed;
-            right: 50%;
-            width: 50%;
-            height: 100%;
+            /* right: 50%; */
+            width: 1000%;
+            height: fit-content;
             z-index: 2;
             animation: slide-in 1s ease 0s 1 normal none;
             font-size: 2em;
@@ -50,48 +51,30 @@ header{
     #headerTag{
         font-family: 'Anton', sans-serif;
         width: 100%;
-
+        position: relative;
+        left: 50vh;
+        
     }
 
-#hamburger
-{
-    content: url("images/hamburgerIcon.png");
-    z-index: 999;
-    width: 50px;
-    position: fixed;
-left: 90vw;
-filter: invert(100);
-   
-}
 
-.shownav{
-content: url("images/hamburgerIcon.png");  
-z-index: 999;
-width: 50px; 
-position: fixed;
-left: 90vw;
-filter: invert(100);
-}
-
-#hamburg{
-    content: url("images/hamburgerIcon.png");  
-    z-index: 999;
-    width: 50px; 
-    position: relative;
-    left: 85vw;
-    filter: invert(100);
-    }
     
 /* Skeleton of the website */
 #menu li a{
-    color: black;
+    color: #fff;
+    font-family: 'Anton', sans-serif;
 
 }
 #menu li {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
-    left: 50%;
     
+    
+}
+
+#menu{
+    position: relative;
+    left: 50vw;
+    background-color: transparent;
 }
 #about{
     background-color: white;
@@ -117,28 +100,8 @@ filter: invert(100);
   
 
 }
-/* Controls when the nav bar is displayed (Open/closed */
-#clicked .off {
-    display: none;
-}
-
-#clicked .on{
-    display: block;
-    transition: transition 5s ease-in;
-}
-
-#clicked:target .on {
-    display: none;
-    transition: transition 5s ease-in;
-}
-#clicked:target .off {
-    display: block;
-    transition: transition 5s ease-in;
-}
-/* Target the nav - so the nav turns on an off*/
-#clicked:target header {
-    display: none;
-    transition: transition 5s ease-in;
+.nav{
+    visibility: hidden;
 }
 
 /* Images */
