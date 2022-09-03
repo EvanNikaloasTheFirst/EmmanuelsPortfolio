@@ -50,6 +50,7 @@ header a {
 
 #logo{
     width:50px;
+    filter: invert(100);
 }
 #menu li {
 list-style: none;

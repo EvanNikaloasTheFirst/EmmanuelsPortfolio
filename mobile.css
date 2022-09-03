@@ -63,10 +63,13 @@ header{
     color: #fff;
     font-family: 'Anton', sans-serif;
 
+    position: relative;
+    right: 275px;
 }
-#menu li {
+#menu li ul {
+   
     display: inline-block;
-    margin: 0 auto;
+  
     
     
 }
